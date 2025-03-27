@@ -1,0 +1,1 @@
+v,b=input().split();print('\n'.join([f"{x}진수: {format(int(v,int(b)),x[0].upper())}"for x in['d','x','o','b']]))
