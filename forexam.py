@@ -1,31 +1,35 @@
-result,R="",0
+#로또 추첨하기
 
+import random
 
+def getNumber():
+    return random.randrange(1,46)
 
+lotto=[]
+num=0
+
+print("로또 추첨 시작")
+ 
 while True:
-    while True:
-        try:
-            A=int(input("1.입력한 수식 계산 2. 두 수 사이의 합계"))
-            break
-        except ValueError:
-            print("정수를 입력해주세요")
-    if A==1:
-        B=input("계산할 수식을 입력해주세요")
-        result=eval(B)
-        break
-    elif A==2:
-        while True:
-            try:
-                B=int(input("첫번째 숫자를 입력해주세요"))
-                C=int(input("두번째 숫자를 입력해주세요"))   #B<C 가정
-                break
-            except ValueError:
-                print("다시 입력해주셈")
-        for i in range(B,C+1):
-            R=R+i
-        result=R
-        break
-    else:
-        print("1,2중에 입력해주세요")
+    num=getNumber()
 
-print(result)
+    if lotto.count(str(num)) == 0:
+        lotto.append(str(num))
+
+    if len(lotto)>=6:
+        print("추첨끝")
+        break
+
+lotto.sort()
+print("추첨된 로또 번호",end="")
+for i in range(6):
+    print(f"{lotto[i]} ",end="")
+
+
+#값에 의한 전달, 참조에 의한 전달
+def func(p):
+    p[0]=222
+
+v=(111,436)
+func(v)
+print(v[0])
