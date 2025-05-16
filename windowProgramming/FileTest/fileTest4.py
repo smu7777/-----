@@ -3,7 +3,7 @@ import os
 inFp=None
 fName, inList, inStr="", [], ""
 
-fName=input("읽을 파일 이름을 입력하시오: ")
+fName=input("읽을 파일의 이름를 입력하시오: ")
 
 if os.path.exists(fName):
     inFp=open(fName, "r")

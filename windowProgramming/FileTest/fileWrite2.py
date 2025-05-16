@@ -1,8 +1,8 @@
 inFp, outFp=None, None
 inStr=""
 
-inFp=open("읽을 파일","r")
-outFp=open("쓸 파일","w")
+inFp=open("/Applications/무제 폴더/windowProgramming/FileTest/data1.txt","r")
+outFp=open("/Applications/무제 폴더/windowProgramming/normal.txt","w")
 
 inList=inFp.readlines()
 for inStr in inList:

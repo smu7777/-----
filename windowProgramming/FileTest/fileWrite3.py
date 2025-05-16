@@ -32,4 +32,4 @@ while True:
 
 inFp.close()
 outFp.close()
-print(f"{outFname} --> {inFname} 변환완료")
+print(f"{inFname} --> {outFname} 변환완료")
