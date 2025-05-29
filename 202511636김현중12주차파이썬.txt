@@ -1,0 +1,7 @@
+202511636 김현중
+
+Self study 12-1
+https://github.com/smu7777/-----/blob/main/OOP/oop.py
+
+Self study 12-2
+https://github.com/smu7777/-----/blob/main/OOP/carTest3.py
