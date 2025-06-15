@@ -31,7 +31,7 @@ window.title("냥이 앨범 보기")
 btnPrev= Button(window, text="<< 이전", command=clickPrev)
 btnNext= Button(window, text="다음 >>", command=clickNect)
 
-photo= PhotoImage(file="/Applications/무제 폴더/windowProgramming/"+fnameList[0]) ##초기값인가?
+photo= PhotoImage(file="/Applications/무제 폴더/windowProgramming/"+fnameList[0])
 pLabel= Label(window, image=photo)
 fileName= Label(window, text=fnameList[0])
 
